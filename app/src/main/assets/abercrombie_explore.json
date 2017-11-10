@@ -1,0 +1,109 @@
+[
+  {
+    "title": "TOPS STARTING AT $12",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-20160527-app-m-shirts?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/mens-new-arrivals",
+        "title": "Shop Men"
+      },
+      {
+        "target": "https://www.abercrombie.com/shop/us/womens-new-arrivals",
+        "title": "Shop Women"
+      }
+    ],
+    "promoMessage": "USE CODE: 12345",
+    "topDescription": "A&F ESSENTIALS",
+    "bottomDescription": "*In stores & online. <a href=\\\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160602_Tier_Promo_US.html\\\">Exclusions apply. See Details</a>"
+  },
+  {
+    "title": "T-SHIRT DRESSES",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160601-app-women-dresses?$anf-ios-fullwidth-3x$",
+    "topDescription": "THROW ON & GO",
+    "content": [
+      {
+        "elementType": "hyperlink",
+        "target": "https://www.abercrombie.com/shop/us/womens-dresses-and-rompers",
+        "title": "SHOP NOW"
+      }
+    ]
+  },
+  {
+    "title": "Spotlight On New",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160601-app-men-spotlight?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "elementType": "hyperlink",
+        "target": "https://www.abercrombie.com/shop/us/mens-new-arrivals",
+        "title": "SHOP NOW"
+      }
+    ]
+  },
+  {
+    "title": "Spotlight On New",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160601-app-women-spotlight?$anf-ios-fullwidth-3x$"
+  },
+  {
+    "title": "A&F ESSENTIALS",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160415-app-men-essentials?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/mens-a-and-f-essentials",
+        "title": "SHOP NOW"
+      }
+    ],
+    "topDescription": "THE SOFTEST STYLE STAPLES"
+  },
+  {
+    "title": "FASHION TOPS",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160518-app-women-tops?$anf-ios-fullwidth-3x$",
+    "topDescription": "SUMMER-READY"
+  },
+  {
+    "title": "ALL SHORTS $29",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160505-app-w-shorts?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/womens-shorts-bottoms",
+        "title": "SHOP NOW"
+      }
+    ],
+    "topDescription": "LIMITED TIME",
+    "bottomDescription": "*In stores & online. <a href=\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160601_Shorts_US.html\">Exclusions apply. See Details</a>"
+  },
+  {
+    "title": "ALL SHORTS $29",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160519-app-m-shorts?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/mens-shorts-bottoms",
+        "title": "SHOP NOW"
+      }
+    ],
+    "topDescription": "LIMITED TIME",
+    "bottomDescription": "*In stores & online. <a href=\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160601_Shorts_US.html\">Exclusions apply. See Details</a>"
+  },
+  {
+    "title": "TEES & HENLEYS",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160518-app-men-tees?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/mens-tees-and-henleys-tops",
+        "title": "SHOP NOW"
+      }
+    ],
+    "topDescription": "SUMMER STAPLE"
+  },
+  {
+    "title": "ALL JEANS BUY ONE GET ONE 50% OFF",
+    "backgroundImage": "http://anf.scene7.com/is/image/anf/anf-US-20160415-app-women-jeans?$anf-ios-fullwidth-3x$",
+    "content": [
+      {
+        "target": "https://www.abercrombie.com/shop/us/womens-jeans-bottoms",
+        "title": "SHOP NOW"
+      }
+    ],
+    "topDescription": "LIMITED TIME",
+    "bottomDescription": "*In stores & online. Applies to equal or lesser value item. Single items priced as marked. <a href=\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160601_Jeans_BOGO_50_Off.html\">Exclusions apply. See Details</a>"
+  }
+]

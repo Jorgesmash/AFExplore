@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Application Name -->
+    <string name="app_name">A&amp;F Explore</string>
+
+    <!-- ExploreItem Placeholders -->
+    <string name="top_description_placeholder">A&amp;F ESSENTIALS</string>
+    <string name="title_placeholder">TOPS STARTING AT $12</string>
+    <string name="promo_message_placeholder">USE CODE: 12345</string>
+    <string name="bottom_description_placeholder">*In stores &amp; online. <a href="http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160602_Tier_Promo_US.html">Exclusions apply. See Details</a></string>
+    <string name="button1_placeholder">SHOP MEN</string>
+    <string name="button2_placeholder">SHOP WOMEN</string>
+
+    <!-- NoNetWorkDialogFragment -->
+    <string name="no_network_dialog_fragment_title">No Internet Connection</string>
+    <string name="no_network_dialog_fragment_message">Make sure Wi-Fi or phone data is turned on, then try again.</string>
+
+    <!-- ResultTimeoutDialogFragment -->
+    <string name="result_timeout_dialog_fragment_title">Connection Timeout</string>
+    <string name="result_timeout_dialog_fragment_message">There was a timeout during the connection to server. Please try again.</string>
+
+    <!-- ResultAccessDeniedDialogFragment -->
+    <string name="result_accessdenied_dialog_fragment_title">Access Denied</string>
+    <string name="result_accessdenied_dialog_fragment_message">There is no access to this resource in server. Please try again.</string>
+
+    <!-- ResultUnknownErrorDialogFragment -->
+    <string name="result_error_unknown_fragment_title">Unknown Error</string>
+    <string name="result_unknown_dialog_fragment_message">There was an unknown error during the connection to server. Please try again.</string>
+
+    <!-- NotFoundDialogFragment -->
+    <string name="result_notfound_dialog_fragment_title">Not Found</string>
+    <string name="result_notfound_dialog_fragment_message">The requested info was not found. Please try again.</string>
+
+    <!-- Successful API Call -->
+    <string name="result_successful_dialog_fragment_title">API call Successful</string>
+    <string name="result_successful_dialog_fragment_message">The API call has retrieve a response successfully.</string>
+
+</resources>

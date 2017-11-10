@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Use in Toolbar -->
+    <color name="colorPrimary">#FF323232</color>
+
+    <!-- Use in Action Bar -->
+    <color name="colorPrimaryDark">#FF323232</color>
+
+    <!-- Use in Hyperlinks -->
+    <color name="colorAccent">#FF808080</color>
+
+    <!-- Use in RecycleView -->
+    <color name="recyclerViewBackgroundColor">#FFF0F0F0</color>
+
+</resources>
