@@ -111,12 +111,10 @@ public class HomeActivity extends AppCompatActivity {
 
         } else {
 
-            final AtomicBoolean callbackCalled = new AtomicBoolean(false);
-
             // Connect to API endpoint to retrieve the information
             APIConnectionManager apiConnectionManager = new APIConnectionManager(this);
             apiConnectionManager.setOnConnectionResultListener(new ExploreAPIManagerOnConnectionResultListener());
-            apiConnectionManager.connectToExploreEndpoint(callbackCalled, Constants.BASE_URL);
+            apiConnectionManager.connectToExploreEndpoint(null, Constants.BASE_URL);
         }
     }
 

@@ -114,14 +114,16 @@ public class APIConnectionManager {
 
         private AtomicBoolean callbackCalled;
 
-        public ExploreAPIConnectionCallback(AtomicBoolean callbackCalled) {
+        ExploreAPIConnectionCallback(AtomicBoolean callbackCalled) {
             this.callbackCalled = callbackCalled;
         }
 
         @Override
         public void onResponse(Call call, Response response) {
 
-            callbackCalled.set(true);
+            if (callbackCalled != null) {
+                callbackCalled.set(true);
+            }
 
             List<ExploreItemDataModel> exploreItemDataModelList = (ArrayList<ExploreItemDataModel>) response.body();
 
@@ -139,7 +141,9 @@ public class APIConnectionManager {
         @Override
         public void onFailure(Call call, Throwable t) {
 
-            callbackCalled.set(true);
+            if (callbackCalled != null) {
+                callbackCalled.set(true);
+            }
 
             if (t instanceof SocketTimeoutException) {
                 onConnectionResultListener.onConnectionResult(RESULT_TIMEOUT, null);
