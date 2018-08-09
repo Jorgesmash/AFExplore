@@ -31,8 +31,6 @@ import static android.support.customtabs.CustomTabsIntent.EXTRA_ENABLE_URLBAR_HI
 
 class ExploreRecyclerViewAdapter extends RecyclerView.Adapter<ExploreRecyclerViewAdapter.ViewHolder> {
 
-    private static final String EXTRA_CUSTOM_TABS_KEEP_ALIVE = "android.support.customtabs.extra.KEEP_ALIVE";
-
     // The Activity context
     private Context context;
 
