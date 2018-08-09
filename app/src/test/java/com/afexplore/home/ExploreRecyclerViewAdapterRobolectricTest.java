@@ -31,7 +31,7 @@ public class ExploreRecyclerViewAdapterRobolectricTest {
     private RecyclerView exploreRecyclerView;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
 
         HomeActivity homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
 
@@ -47,7 +47,7 @@ public class ExploreRecyclerViewAdapterRobolectricTest {
     }
 
     @Test
-    public void ExploreRecyclerViewAdapter_shouldContainItemsTest() throws Exception {
+    public void ExploreRecyclerViewAdapter_shouldContainItemsTest() {
 
         ExploreRecyclerViewAdapter adapter = (ExploreRecyclerViewAdapter) exploreRecyclerView.getAdapter();
 

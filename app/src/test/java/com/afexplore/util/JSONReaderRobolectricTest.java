@@ -35,8 +35,7 @@ public class JSONReaderRobolectricTest {
     private HomeActivity homeActivity;
 
     @Before
-    public void setUp() throws Exception {
-
+    public void setUp() {
         homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
     }
 
@@ -44,7 +43,7 @@ public class JSONReaderRobolectricTest {
      * Test to validate that JSONReader is able to return a valid JSON object.
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNonEmptyExploreItemDataModelListTest() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNonEmptyExploreItemDataModelListTest() {
 
         // Get the JSON array from file and place it in a List
         List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>(){}.getType());
@@ -60,7 +59,7 @@ public class JSONReaderRobolectricTest {
      * Test to check that JSONReader returns null when the generic type is not defined.
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNullTest1() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNullTest1() {
 
         // Get the JSON array from file and place it in a List
         List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME, null);
@@ -74,7 +73,7 @@ public class JSONReaderRobolectricTest {
      * not defined.
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNullTest2() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNullTest2() {
 
         // Get the JSON array from file and place it in a List
         List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(null,null, null);
@@ -87,7 +86,7 @@ public class JSONReaderRobolectricTest {
      * Test to check that JSONReader returns null when the file is not found
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNullTest3() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNullTest3() {
 
         // Get the JSON array from file and place it in a List
         List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity,"whatever", new TypeToken<List<ExploreItemDataModel>>(){}.getType());
@@ -100,7 +99,7 @@ public class JSONReaderRobolectricTest {
      * Test to check that JSONReader returns a valid JSON string
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNonEmptyJSONStringTest() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNonEmptyJSONStringTest() {
 
         // Get the JSON array from file and place it in a List
         String jsonString = JSONReader.loadJSONStringFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME);
@@ -113,7 +112,7 @@ public class JSONReaderRobolectricTest {
      * Test to check that JSONReader returns null JSON string when the file is not found
      * */
     @Test
-    public void loadJSONFromAsset_shouldReturnNullJSONStringTest() throws Exception {
+    public void loadJSONFromAsset_shouldReturnNullJSONStringTest() {
 
         // Get the JSON array from file and place it in a List
         String jsonString = JSONReader.loadJSONStringFromAsset(homeActivity, "whatever");

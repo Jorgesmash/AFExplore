@@ -43,7 +43,7 @@ public class APIConnectionManagerRobolectricTest {
     private APIConnectionManager apiConnectionManager;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
 
         // Initialize HomeActivity
         homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
