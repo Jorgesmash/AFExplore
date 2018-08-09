@@ -82,7 +82,7 @@ public class APIConnectionManagerRobolectricTest {
 
         final AtomicBoolean callbackCalled = new AtomicBoolean(false);
 
-        String jsonString = JSONReader.newInstance(homeActivity).loadJSONStringFromAsset(Constants.EXPLORE_JSON_FILENAME);
+        String jsonString = JSONReader.loadJSONStringFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME);
 
         // Initialize MockWebServer
         MockWebServer mockWebServer = new MockWebServer();

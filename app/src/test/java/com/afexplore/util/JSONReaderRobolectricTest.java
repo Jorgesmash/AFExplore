@@ -34,17 +34,10 @@ public class JSONReaderRobolectricTest {
     // The Activity which holds the view hierarchy
     private HomeActivity homeActivity;
 
-    // Class JSONReader will be tested
-    private JSONReader jsonReader;
-
     @Before
     public void setUp() throws Exception {
 
         homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
-
-        jsonReader = JSONReader.newInstance(homeActivity);
-
-        assertNotNull(jsonReader);
     }
 
     /**
@@ -54,7 +47,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNonEmptyExploreItemDataModelListTest() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        List<ExploreItemDataModel> list = jsonReader.loadJSONObjectFromAsset(Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>(){}.getType());
+        List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>(){}.getType());
 
         // Assert that the list is not empty
         assertThat(list, not(IsEmptyCollection.<ExploreItemDataModel>empty()));
@@ -70,7 +63,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNullTest1() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        List<ExploreItemDataModel> list = jsonReader.loadJSONObjectFromAsset(Constants.EXPLORE_JSON_FILENAME, null);
+        List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME, null);
 
         // Assert that the list is null
         assertNull(list);
@@ -84,7 +77,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNullTest2() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        List<ExploreItemDataModel> list = jsonReader.loadJSONObjectFromAsset(null, null);
+        List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(null,null, null);
 
         // Assert that the list is null
         assertNull(list);
@@ -97,7 +90,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNullTest3() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        List<ExploreItemDataModel> list = jsonReader.loadJSONObjectFromAsset("whatever", new TypeToken<List<ExploreItemDataModel>>(){}.getType());
+        List<ExploreItemDataModel> list = JSONReader.loadJSONObjectFromAsset(homeActivity,"whatever", new TypeToken<List<ExploreItemDataModel>>(){}.getType());
 
         // Assert that the list is null
         assertNull(list);
@@ -110,7 +103,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNonEmptyJSONStringTest() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        String jsonString = jsonReader.loadJSONStringFromAsset(Constants.EXPLORE_JSON_FILENAME);
+        String jsonString = JSONReader.loadJSONStringFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME);
 
         // Assert that the list is null
         assertNotNull(jsonString);
@@ -123,7 +116,7 @@ public class JSONReaderRobolectricTest {
     public void loadJSONFromAsset_shouldReturnNullJSONStringTest() throws Exception {
 
         // Get the JSON array from file and place it in a List
-        String jsonString = jsonReader.loadJSONStringFromAsset("whatever");
+        String jsonString = JSONReader.loadJSONStringFromAsset(homeActivity, "whatever");
 
         // Assert that the list is null
         assertNull(jsonString);

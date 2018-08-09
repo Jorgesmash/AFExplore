@@ -28,21 +28,18 @@ import static org.junit.Assert.assertThat;
 @Config(constants = BuildConfig.class)
 public class ExploreRecyclerViewAdapterRobolectricTest {
 
-    // The Activity which holds the view hierarchy
-    private HomeActivity homeActivity;
-
     private RecyclerView exploreRecyclerView;
 
     @Before
     public void setUp() throws Exception {
 
-        homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
+        HomeActivity homeActivity = Robolectric.buildActivity(HomeActivity.class).create().get();
 
         // Get exploreRecyclerView from homeActivity
         exploreRecyclerView = homeActivity.findViewById(R.id.exploreRecyclerView);
 
         // Get the JSON response
-        List<ExploreItemDataModel> exploreItemDataModelList = JSONReader.newInstance(homeActivity).loadJSONObjectFromAsset(Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>() {}.getType());
+        List<ExploreItemDataModel> exploreItemDataModelList = JSONReader.loadJSONObjectFromAsset(homeActivity, Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>() {}.getType());
 
         // Specify an Adapter
         ExploreRecyclerViewAdapter exploreRecyclerViewAdapter = new ExploreRecyclerViewAdapter(homeActivity, exploreItemDataModelList);

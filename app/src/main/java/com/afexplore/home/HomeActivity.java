@@ -106,7 +106,7 @@ public class HomeActivity extends AppCompatActivity {
         if (Constants.SIMULATE_EXPLORE_API_CONNECTION) {
 
             // Read JSON from file in assets folder and populate the Explore section
-            List<ExploreItemDataModel> exploreItemDataModelList = JSONReader.newInstance(this).loadJSONObjectFromAsset(Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>(){}.getType());
+            List<ExploreItemDataModel> exploreItemDataModelList = JSONReader.loadJSONObjectFromAsset(this, Constants.EXPLORE_JSON_FILENAME, new TypeToken<List<ExploreItemDataModel>>(){}.getType());
             populateExploreSection(exploreItemDataModelList);
 
         } else {

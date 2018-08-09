@@ -15,27 +15,12 @@ import java.lang.reflect.Type;
  * */
 public class JSONReader {
 
-    private static Context context;
-
-    private static JSONReader jsonReader;
-
-    /** Singleton constructor */
-    public static JSONReader newInstance(Context context) {
-
-        if (jsonReader == null) {
-            JSONReader.context = context;
-            jsonReader = new JSONReader();
-        }
-
-        return jsonReader;
-    }
-
     /**
      * Reads JSON from file and returns the JSON Data Model associated.
      * The returned object is generic, enabling this method to read any JSON file and map it to any
      * DataModel object (any POJO class).
      * */
-    public static <T> T loadJSONObjectFromAsset(String jsonFileNameString, Type typeOfT) {
+    public static <T> T loadJSONObjectFromAsset(Context context, String jsonFileNameString, Type typeOfT) {
 
         // Generic type variable to return any DataModel object
         T t = null;
@@ -69,7 +54,7 @@ public class JSONReader {
     /**
      * Reads JSON from file and returns the JSON String associated.
      * */
-    public static String loadJSONStringFromAsset(String jsonFileNameString) {
+    public static String loadJSONStringFromAsset(Context context, String jsonFileNameString) {
 
         String jsonString = null;
 
